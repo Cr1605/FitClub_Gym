@@ -9,6 +9,7 @@ import Calories from '../../assets/calories.png'
 const Home = () => {
   return (
     <div className="home">
+      <div className="blur home-blur"></div>
       <div className="left-h">
         <Header />
         <div className="the-best-ad">
