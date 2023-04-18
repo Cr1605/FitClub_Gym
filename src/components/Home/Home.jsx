@@ -5,15 +5,21 @@ import hero_image from '../../assets/hero_image.png'
 import hero_image_back from '../../assets/hero_image_back.png'
 import Heart from '../../assets/heart.png'
 import Calories from '../../assets/calories.png'
+import {motion} from 'framer-motion'
 
 const Home = () => {
+
+  const transition = {type: "spring", duration: 3}
   return (
     <div className="home">
       <div className="blur home-blur"></div>
       <div className="left-h">
         <Header />
         <div className="the-best-ad">
-          <div></div>
+          <motion.div 
+          initial={{left: '200px'}}
+          whileInView={{left: '8px'}}
+          transition={transition}></motion.div>
           <span>THE BEST FITNESS CLUB IN THE TOWN</span>
         </div>
 
