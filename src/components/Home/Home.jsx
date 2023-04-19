@@ -10,7 +10,8 @@ import { motion } from 'framer-motion'
 
 const Home = () => {
 
-  const transition = { type: "spring", duration: 3 }
+  const transition = { type: "spring", duration: 3 };
+  const mobile = window.innerWidth <= 768 ? true : false;
   return (
     <div className="home">
       <div className="blur home-blur"></div>
@@ -18,7 +19,7 @@ const Home = () => {
         <Header />
         <div className="the-best-ad">
           <motion.div
-            initial={{ left: '200px' }}
+            initial={{ left: mobile ? '165px' : '200px' }}
             whileInView={{ left: '8px' }}
             transition={{ ...transition, type: 'tween' }}></motion.div>
           <span>THE BEST FITNESS CLUB IN THE TOWN</span>
