@@ -6,6 +6,7 @@ import hero_image_back from '../../assets/hero_image_back.png'
 import Heart from '../../assets/heart.png'
 import Calories from '../../assets/calories.png'
 import { motion } from 'framer-motion'
+import NumberCounter from 'number-counter'
 
 
 const Home = () => {
@@ -45,15 +46,15 @@ const Home = () => {
         {/* figures */}
         <div className="figures">
           <div>
-            <span>+ 140</span>
+            <span><NumberCounter preFix="+" start={100} end={140} delay={3}/></span>
             <span>expert coachs</span>
           </div>
           <div>
-            <span>+ 978</span>
+            <span><NumberCounter preFix="+" start={900} end={978} delay={3}/></span>
             <span>MEMBERS JOINED</span>
           </div>
           <div>
-            <span>+ 50</span>
+            <span><NumberCounter preFix="+" start={0} end={50} delay={3}/></span>
             <span>FITNESS PROGRAMS</span>
           </div>
         </div>
