@@ -3,7 +3,6 @@
     mix-blend-mode: overlay;
     background-color: var(--appColor);
     display: flex;
-    height: 30rem;
     flex-direction: column;
 }
 
@@ -14,7 +13,7 @@
     color: white;
     gap: 2rem;
     padding: 1.5rem;
-    width: 15rem;
+    width: 20rem;
     align-self: center;
     margin-top: 5rem;
 }
@@ -31,6 +30,8 @@
 
 .btn {
     text-decoration: none;
+    width: 14rem;
+    align-self: center;
 }
 
 .text {
@@ -38,7 +39,7 @@
     border-radius: 5px;
     height: 30%;
     outline: none;
-    padding: 0.5rem;
-    width: 14rem;
+    padding: 1rem;
+    width: 15rem;
     margin-bottom: 1rem;
 }

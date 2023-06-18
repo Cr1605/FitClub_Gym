@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import './Login.css'
 import { LoginData } from '../../data/loginData';
+import Github from '../../assets/github.png'
+import Instagram from '../../assets/instagram.png'
+import LinkedIn from '../../assets/linkedin.png'
+import Logo from '../../assets/logo.png'
 
 const Login = () => {
 
@@ -8,19 +12,15 @@ const Login = () => {
     const [pass, setPass] = useState(null);
 
     const handleLogin = (username, pass) => {
-        return (username == LoginData.map((username) => username.username)) && (pass == LoginData.map((pass) => pass.pass)) ? '/' : '/home'
+        return (username === LoginData.map((username) => username.username)) && (pass === LoginData.map((pass) => pass.pass)) ? '/' : '/'
     }
 
 
     return (
         <div className='login'>
-            {/* <div className="login-input">
-                <span>Login</span>
-                <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
-                <input type="password" value={pass} onChange={e => setPass(e.target.value)} />
-                <a href={handleLogin(username, pass)}>Submit</a>
-            </div> */}
-
+          
+            
+       
             <div className="login-input">
                 <div className="span">
                     <span>Login</span>
@@ -31,6 +31,19 @@ const Login = () => {
                 </div>
                 <a href={handleLogin(username, pass)} className="btn">Submit</a>
             </div>
+
+            <div className="footer">
+                <div className="social-links">
+                    <img src={Github} alt="" />
+                    <img src={Instagram} alt="" />
+                    <img src={LinkedIn} alt="" />
+                </div>
+                <div className="logo-f">
+                    <img src={Logo} alt="" />
+                </div>
+            </div>
+            <div className="blur footer-blur-1"></div>
+            <div className="blur footer-blur-2"></div>
         </div>
     )
 }
