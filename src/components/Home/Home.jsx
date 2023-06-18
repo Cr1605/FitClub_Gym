@@ -68,7 +68,7 @@ const Home = () => {
       </div>
 
       <div className="right-h">
-        <buttons className="btn">Join Now</buttons>
+        <a href='/login' className="btn" >Join Now</a>
         <motion.div
           initial={{ right: '-1rem' }}
           whileInView={{ right: '4rem' }}
